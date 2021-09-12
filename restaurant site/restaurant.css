@@ -29,12 +29,24 @@ body {
     float: right ;
 }
 #nav-list {
+    font-size: 20px;
+    font-weight: 550;
     list-style-type: none;
     margin-top: -5%;
 }
 #nav-list a {
     color: #61122f;
     text-align: center;
+    font-size: 0.95em;
+}
+#icon {
+    margin-right: 5%;
+}
+#icon3 {
+    margin-right: 5%;
+}
+#navlist3 {
+    margin-left: 12px;
 }
 #nav-list a:hover {
     background: floralwhite;
@@ -62,20 +74,18 @@ body {
 #call-btn {
     text-decoration: none;
     margin-top: 20px;
-    margin-left: 2%
 }
 .btn {
-    margin-bottom: 10px;
     background-color: gold;
-    padding: 20px 30px 20px 30px;
-    padding-left: 39%;
-    padding-right: 35%;
     color: #61122f;
     font-size: 1.3em;
     font-weight: bold;
 }
 #xs-deliver {
     color: #fff;
+}
+#navbarSupportedContent {
+    margin-top: 5%;
 }
 /****END NAVBAR HEADER****/
 
@@ -113,6 +123,12 @@ body {
     background-color: #000;
     color: #fff;
     opacity: 0.8;
+}
+#about {
+    color: #fff;
+}
+#awards {
+    margin-bottom: 21%;
 }
 /****END HOMEPAGE*****/
 /***FOOTER**/
@@ -255,6 +271,15 @@ h3.menu-item-tile {
         display: none;
     }
 }
+@media(min-width: 751px)
+{
+    #call-btn > a {
+        display: none;
+    }
+    #xs-deliver {
+        display: none;
+    }
+}
 @media(min-width: 0px) and (max-width: 768px){
     .navbar-header {
         float: left;
@@ -284,6 +309,21 @@ h3.menu-item-tile {
     }
     .menu-item-tile hr {
         margin-left: 8%;
+    }
+    #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color: gold;
+        color: #61122f;
+    }
+    #xs-deliver {
+        margin-top: 5px;
+        font-size: 0.7em;
+        letter-spacing: 0.1em;
+         text-transform: uppercase;
     }
 }
 @media(max-width: 479px) {
